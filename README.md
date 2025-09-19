@@ -118,11 +118,11 @@ ChronicalX/
    **Frontend (Terminal 2):**
    ```bash
    cd client
-   npm start
+   npm run dev
    ```
 
 6. **Access the application**
-   - Frontend: http://localhost:3000
+   - Frontend: http://localhost:5173
    - Backend API: http://localhost:5000
 
 ## 📚 API Endpoints
@@ -151,19 +151,6 @@ ChronicalX/
 - `GET /api/user/profile` - Get user profile
 - `PUT /api/user/profile` - Update user profile
 - `DELETE /api/user/delete-account` - Delete user account
-
-## 🧪 Testing Data
-
-Use the test account creation script to populate your database:
-
-```bash
-cd scripts
-npm install
-npm run create-accounts
-```
-
-This creates 20 test accounts with the password `123456`.
-
 ## 🎨 UI Design
 
 The application features a professional, modern design with:
@@ -212,20 +199,9 @@ The application is fully responsive and works on:
 4. Push to branch: `git push origin feature-name`
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 👨‍💻 Author
 
-**ChronicalX Team**
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- MongoDB team for the database
-- Tailwind CSS for the styling system
-- All the open-source contributors
+**Rithin Rajpoot - EliteX Team**
 
 ---
 
