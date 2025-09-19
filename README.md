@@ -73,7 +73,7 @@ ChronicalX/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ChronicalX.git
+   git clone (https://github.com/rithin-rajpoot/chronical-x.git)
    cd ChronicalX
    ```
 
