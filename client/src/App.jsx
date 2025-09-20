@@ -19,9 +19,36 @@ const PublicRoute = lazy(() => import("./components/PublicRoute"));
 
 // Loading component for fallback
 const LoadingSpinner = () => (
-  <div className="flex flex-col justify-center items-center h-screen">
-    <Loader className="size-10 animate-spin text-black dark:text-white" />
-    <p>Loading...</p>
+  <div className="flex flex-col justify-center items-center h-screen bg-gray-50">
+    <div className="text-center">
+      {/* Spinner */}
+      <div className="mb-6">
+        <Loader className="size-12 animate-spin text-slate-600 mx-auto" />
+      </div>
+      
+      {/* Loading message */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold text-gray-900">Loading ChronicalX</h3>
+        <p className="text-gray-600">Please wait while we connect to the server...</p>
+        
+        {/* Free tier notice */}
+        <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg max-w-md">
+          <p className="text-sm text-blue-700">
+            ⏱️ <strong>First-time load:</strong> Initial connection may take up to 50 seconds 
+            due to free hosting service startup time.
+          </p>
+        </div>
+        
+        {/* Loading dots animation */}
+        <div className="flex justify-center items-center mt-4">
+          <div className="flex space-x-1">
+            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
+            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
+            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
