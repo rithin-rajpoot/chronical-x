@@ -133,7 +133,7 @@ const Navbar = () => {
                 <div className="flex items-center px-4 py-3 bg-gray-50 rounded-lg mb-3 border border-gray-200">
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-200">
                     <img
-                      src={userProfile?.avatar || 'https://via.placeholder.com/40'}
+                      src={userProfile?.avatar || '/avatar.png'}
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
@@ -142,7 +142,7 @@ const Navbar = () => {
                     <div className="text-base font-semibold text-gray-800">
                       {userProfile?.fullName || 'User'}
                     </div>
-                    <div className="text-sm text-gray-500">{user?.email}</div>
+                    <div className="text-sm text-gray-500">{userProfile?.email}</div>
                   </div>
                 </div>
                 <button
