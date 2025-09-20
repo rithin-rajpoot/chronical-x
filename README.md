@@ -1,5 +1,7 @@
 # ChronicalX - Modern Blog Platform
 
+🚀 **Live Demo**: [https://chronical-x.vercel.app/](https://chronical-x.vercel.app/)
+
 A full-stack blog platform built with React, Node.js, Express, and MongoDB. Features user authentication, post management, comments, likes, and modern UI design.
 
 ## 🚀 Features
@@ -180,14 +182,31 @@ The application is fully responsive and works on:
 
 ## 🚢 Deployment
 
-### Frontend Deployment (Netlify/Vercel)
-1. Build the React app: `npm run build`
-2. Deploy the `build` folder
-3. Set environment variables in deployment platform
+### Live Application
+- **Frontend**: Deployed on Vercel - [https://chronical-x.vercel.app/](https://chronical-x.vercel.app/)
+- **Backend**: Deployed on Render - [Backend API](https://chronical-x-backend.onrender.com)
 
-### Backend Deployment (Heroku/Railway/DigitalOcean)
+### Frontend Deployment (Vercel)
+1. Build the React app: `npm run build`
+2. Deploy to Vercel
+3. Set environment variables in Vercel dashboard:
+   ```
+   VITE_API_URL=https://your-backend-domain.onrender.com/chronicalX/api/v1
+   VITE_GOOGLE_CLIENT_ID=your-google-client-id
+   ```
+
+### Backend Deployment (Render/Railway/Heroku)
 1. Set up MongoDB Atlas for production database
-2. Configure environment variables
+2. Configure environment variables:
+   ```
+   MONGODB_URL=mongodb+srv://...
+   JWT_SECRET=your-jwt-secret
+   CLIENT_URL=https://your-frontend-domain.vercel.app
+   CLOUDINARY_CLOUD_NAME=your-cloudinary-name
+   CLOUDINARY_API_KEY=your-api-key
+   CLOUDINARY_API_SECRET=your-api-secret
+   NODE_ENV=production
+   ```
 3. Deploy the server folder
 4. Update CORS settings for production URL
 
