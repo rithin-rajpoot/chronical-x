@@ -41,8 +41,8 @@ export const register = asyncHandler(
         .cookie("token", token, {
             expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production', // Only secure in production
-            sameSite: 'strict' // Changed from 'none' for better security
+            secure: true, // Always use secure cookies
+            sameSite: 'none' // Changed from 'strict' for better security
         })
         .json({
             success: true, 
@@ -89,8 +89,8 @@ export const login = asyncHandler(
         .cookie("token", token, {
             expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // Standardized to 7 days
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict'
+            secure: true,
+            sameSite: 'none'
         })
         .json({
             success: true, 
@@ -126,8 +126,8 @@ export const logout = asyncHandler(
         .cookie("token", "", {
             expires: new Date(Date.now()),
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict'
+            secure: true,
+            sameSite: 'none'
         })
         .json({
             success: true,
@@ -206,8 +206,8 @@ export const deleteUser = asyncHandler(
         .cookie("token", "", {
             expires: new Date(Date.now()),
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict'
+            secure: true,
+            sameSite: 'none'
         })
         .json({
             success: true,
