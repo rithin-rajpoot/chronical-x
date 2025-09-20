@@ -1,4 +1,4 @@
-# ChronicalX - Modern Blog Platform
+# ChronicleX – Where Stories Meet Innovation
 
 🚀 **Live Demo**: [https://chronical-x.vercel.app/](https://chronical-x.vercel.app/)
 
