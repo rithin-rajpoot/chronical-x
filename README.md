@@ -59,8 +59,6 @@ ChronicalX/
 │   ├── utilities/        # Helper functions
 │   ├── db/              # Database connection
 │   └── app.js           # Express app
-├── scripts/             # Utility scripts
-│   └── createTestAccounts.js
 └── README.md
 ```
 
