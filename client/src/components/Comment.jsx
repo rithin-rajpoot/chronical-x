@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FaUser, FaEdit, FaTrash, FaSave, FaTimes, FaCalendar } from 'react-icons/fa';
 import { updateCommentThunk, deleteCommentThunk } from '../store/slice/comment/commentThunk';

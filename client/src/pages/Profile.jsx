@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FaEdit, FaSave, FaTimes, FaUser, FaEnvelope, FaCalendar, FaImage, FaTrash, FaExclamationTriangle } from 'react-icons/fa';
-import { getUserProfileThunk, updateProfileThunk, deleteUserThunk } from '../store/slice/user/userThunk';
+import { updateProfileThunk, deleteUserThunk } from '../store/slice/user/userThunk';
 
 const Profile = () => {
   const dispatch = useDispatch();

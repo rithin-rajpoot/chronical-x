@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaHeart, FaEdit, FaTrash, FaCalendar, FaUser, FaComment } from 'react-icons/fa';

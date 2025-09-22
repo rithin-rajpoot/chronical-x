@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaPlus, FaEdit, FaTrash, FaEye, FaHeart, FaComment } from 'react-icons/fa';
 import { getAllPostsThunk, deletePostThunk, toggleLikeThunk } from '../../store/slice/post/postThunk';
-import { logoutUserThunk } from '../../store/slice/user/userThunk';
 
 const Dashboard = () => {
   const dispatch = useDispatch();

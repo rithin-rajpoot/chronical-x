@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import { FaKey } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
