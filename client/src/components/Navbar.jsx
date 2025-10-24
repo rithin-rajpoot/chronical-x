@@ -51,7 +51,7 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 ${
+                  className={`flex items-center  py-2 rounded-lg text-sm font-semibold transition-colors duration-200 ${
                     location.pathname === item.path
                       ? 'bg-slate-800 text-white shadow-sm'
                       : 'text-gray-700 hover:bg-gray-100 hover:text-slate-800'
